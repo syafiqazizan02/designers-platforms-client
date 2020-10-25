@@ -52,10 +52,14 @@ export default {
     '@nuxtjs/pwa',
     // https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    // https://auth.nuxtjs.org/
+    '@nuxtjs/auth',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseUrl: process.env.API_URL
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
