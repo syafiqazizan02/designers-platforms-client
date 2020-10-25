@@ -1,12 +1,14 @@
 <template>
   <header class="fixed-topx">
             <nav class="navbar navbar-expand-lg navbar-dark align-items-center">
-                <a
-                    class="navbar-brand text-uppercase fw-500"
+                <nuxt-link
+                    :to="{name: 'index'}"
+                    class="navbar-brand fw-500"
                     href="#"
                     title="Project Name"
-                    >DesignersPlatforms</a
                 >
+                  DesignersPlatforms
+                </nuxt-link>
                 <button
                     class="navbar-toggler mr-auto"
                     type="button"
@@ -57,10 +59,10 @@
                 <!-- Before Login -->
                 <ul class="before-login font-14 fw-300 text-uppercase">
                     <li>
-                        <a href="#">Sign up</a>
+                        <nuxt-link :to="{name: 'register'}">Sign Up</nuxt-link>
                     </li>
                     <li>
-                        <a href="#">Sign in</a>
+                        <nuxt-link :to="{name: 'login'}">Sign In</nuxt-link>
                     </li>
                 </ul>
                 <!-- End Before Login -->
