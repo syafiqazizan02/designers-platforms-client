@@ -56,6 +56,19 @@ export default {
     '@nuxtjs/auth',
   ],
 
+  // Auth module configuration (https://auth.nuxtjs.org/schemes/local.html#options)
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: '/login', method: 'post', propertyName: 'token' },
+          logout: { url: '/logout', method: 'post' },
+          user: { url: '/me', method: 'get', propertyName: 'data' }
+        },
+      }
+    }
+  },
+
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
     baseUrl: process.env.API_URL
