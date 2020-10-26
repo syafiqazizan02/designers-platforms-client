@@ -1,8 +1,8 @@
 <template>
   <div>
      <h1>Home Page</h1>
-      <!-- {{ $auth.loggedIn }} -->
-      <!-- {{ $auth.user }} -->
+      {{ $auth.loggedIn }}
+      {{ $auth.user }}
   </div>
 </template>
 
