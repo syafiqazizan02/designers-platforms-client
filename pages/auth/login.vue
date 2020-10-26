@@ -40,7 +40,7 @@
                 </div>
                 <div class="mt-4 mb-4 clearfix">
                   <nuxt-link
-                    to="/password/email"
+                    to="password/email"
                     class="forgot-pass color-blue font-14 fw-400"
                   >
                     Forgot password?
