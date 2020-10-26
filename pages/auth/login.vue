@@ -47,12 +47,9 @@
           	      </nuxt-link>
                 </div>
                 <div class="text-right">
-                    <button type="submit" class="btn btn-primary primary-bg-color font-16 fw-500 text-uppercase">
-                        <span v-if="form.busy">
-                          <i class="fas fa-spinner fa-spin"></i>
-                        </span>
-                        Login
-                    </button>
+                  <base-button :loding="form.busy">
+                      Login
+                   </base-button>
                 </div>
                 <p class="font-14 fw-400 text-center mt-4">
                     Don't have an account yet?
