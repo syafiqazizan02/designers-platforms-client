@@ -11,7 +11,7 @@
               >
                 {{ form.errors.get('message') }}
                 <nuxt-link
-                  :to="{ name: 'verification.resend' }"
+                  :to="{ name: 'resend' }"
                 >
                   Resend verification email
                 </nuxt-link>
