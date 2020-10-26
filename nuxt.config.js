@@ -72,7 +72,15 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
+    // baseURL: 'http://designers-platforms.com/api',
     baseUrl: process.env.API_URL
+
+  },
+
+  // Enable CORS errors (https://accidental.dev/avoid-api-communication-headaches-by-using-a-proxy/)
+  devServer: {
+    // proxy: 'http://designers-platforms.com/api',
+    proxy: process.env.API_URL
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
