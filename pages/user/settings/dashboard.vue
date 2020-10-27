@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <h1>Dashboard</h1>
-  </div>
+  <div class="setting-block">
+    <div class="setting-title font-16 fw-500">Dashboard</div>
+
+    <div class="setting-body white-bg-color">Place</div>
   </div>
 </template>
 

@@ -42,6 +42,11 @@ export default {
           title: 'Update Profile',
           route: 'profile'
         }
+        ,
+        {
+          title: 'Designs List',
+          route: 'designs'
+        }
       ]
     };
   }
