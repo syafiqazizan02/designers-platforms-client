@@ -108,7 +108,7 @@
                                       >Your Account</span
                                   >
                               </div>
-                              <a
+                              <!-- <a
                                   class="dropdown-item mt-28"
                                   href="#"
                                   title="Profile"
@@ -119,7 +119,11 @@
                               <a class="dropdown-item" href="#" title="Setting">
                                   <i class="fa fa-cogs"></i>
                                   Setting
-                              </a>
+                              </a> -->
+                              <nuxt-link to="/settings/dashboard" class="dropdown-item mt-28">
+                                <i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                              </nuxt-link>
                               <div class="dropdown-divider"></div>
                               <a
                                 class="dropdown-item"
