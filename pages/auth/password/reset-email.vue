@@ -9,23 +9,17 @@
                 :form="form">{{ status }}
               </alert-success>
               <div class="form-group">
-                  <input
-                    type="text"
-                    name="email"
+                  <base-input
+                    :form="form"
+                    field="email"
                     v-model="form.email"
-                    class="form-control form-control-lg font-14 fw-300"
-                    :class="{ 'is-invalid': form.errors.has('email') }"
                     placeholder="Email"
-                  />
-                  <has-error :form="form" field="email"></has-error>
+                  ></base-input>
               </div>
               <div class="text-right">
-                  <button type="submit" class="btn btn-primary primary-bg-color font-16 fw-500 text-uppercase">
-                      <span v-if="form.busy">
-                          <i class="fas fa-spinner fa-spin"></i>
-                      </span>
-                      Reset
-                  </button>
+                  <base-button :loading="form.busy">
+                     Send Reset Link
+                  </base-button>
               </div>
           </form>
       </div>

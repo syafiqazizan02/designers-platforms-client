@@ -12,43 +12,36 @@
                   </p>
               </alert-success>
               <div class="form-group">
-                  <input
-                    type="text"
-                    name="email"
+                  <base-input
+                    :form="form"
+                    :readonly="true"
+                    field="email"
                     v-model="form.email"
-                    readonly class="form-control form-control-lg font-14 fw-300"
-                    :class="{ 'is-invalid': form.errors.has('email') }"
                     placeholder="Email"
-                  />
-                  <has-error :form="form" field="email"></has-error>
+                  ></base-input>
               </div>
               <div class="form-group">
-                  <input
-                    type="password"
-                    name="password"
-                    v-model="form.password"
-                    class="form-control form-control-lg font-14 fw-300"
-                    :class="{ 'is-invalid': form.errors.has('password') }"
+                  <base-input
+                    :form="form"
+                    inputType="password"
+                    field="password"
+                    v-model="form.email"
                     placeholder="New Password"
-                  />
-                  <has-error :form="form" field="password"></has-error>
+                  ></base-input>
               </div>
               <div class="form-group">
-                  <input
-                    type="password"
-                    name="password_confirmation"
+                  <base-input
+                    :form="form"
+                    inputType="password"
+                    field="password_confirmation"
                     v-model="form.password_confirmation"
-                    class="form-control form-control-lg font-14 fw-300"
                     placeholder="Confirmation Password"
-                  />
+                  ></base-input>
               </div>
               <div class="text-right">
-                  <button type="submit" class="btn btn-primary primary-bg-color font-16 fw-500 text-uppercase">
-                      <span v-if="form.busy">
-                          <i class="fas fa-spinner fa-spin"></i>
-                      </span>
+                  <base-button :loading="form.busy">
                       Reset Password
-                  </button>
+                  </base-button>
               </div>
           </form>
       </div>

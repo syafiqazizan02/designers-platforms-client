@@ -25,15 +25,13 @@
                    ></base-input>
                 </div>
                 <div class="form-group">
-                    <input
-                      type="password"
-                      name="password"
+                    <base-input
+                      :form="form"
+                      field="password"
+                      inputType="password"
                       v-model="form.password"
-                      class="form-control form-control-lg font-14 fw-300"
-                      :class="{ 'is-invalid': form.errors.has('password') }"
                       placeholder="Password"
-                    />
-                    <has-error :form="form" field="password"></has-error>
+                    ></base-input>
                 </div>
                 <div class="mt-4 mb-4 clearfix">
                   <nuxt-link
