@@ -33,7 +33,8 @@ export default {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     '~plugins/vform',
-    '~components/_global' // register global component 
+    '~components/_global', // register global component
+    { src: '~/plugins/gmaps', ssr: false } // load google credentials
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

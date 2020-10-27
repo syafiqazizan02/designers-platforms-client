@@ -28,7 +28,7 @@
               ></base-input>
             </div>
             <div class="form-group">
-              Location
+              <!-- config with google api's -->
               <!-- <base-gmap :initialValue="form.formatted_address" @address-response="handleAddress"></base-gmap> -->
             </div>
             <div class="form-group">
@@ -84,7 +84,7 @@ export default {
         about: '',
         tagline: '',
         formatted_address: '',
-        location: {},
+        // location: {},
         available_to_hire: false
       })
     };
@@ -96,6 +96,7 @@ export default {
         .then(res => console.log(res))
         .catch(e => console.log(e));
     }
+    // autocomplate by address
     // handleAddress(data) {
     //   this.form.formatted_address = data.formatted_address;
     //   this.form.location = {
@@ -111,11 +112,12 @@ export default {
         this.form[k] = this.$auth.user[k];
       }
     });
+    // identify by location
     // if (this.$auth.user.location) {
-      this.form.location = {
-        longitude: this.$auth.user.location.coordinates[0],
-        latitude: this.$auth.user.location.coordinates[1]
-      };
+    //   this.form.location = {
+    //     longitude: this.$auth.user.location.coordinates[0],
+    //     latitude: this.$auth.user.location.coordinates[1]
+    //   };
     // } else {
     //   this.form.location = {};
     // }
