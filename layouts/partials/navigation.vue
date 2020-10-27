@@ -89,10 +89,10 @@
                               /> -->
                               <div class="usr-info">
                                   <span class="user-name font-14 fw-500"
-                                      >Syafiq Azizan</span
+                                      >{{ $auth.user.name }}</span
                                   >
                                   <span class="user-deg font-10 fw-300"
-                                      >Full-Stack</span
+                                      > {{ $auth.user.tagline }}</span
                                   >
                                   <span class="down-chevron">
                                       <i class="fa fa-angle-down"></i>
