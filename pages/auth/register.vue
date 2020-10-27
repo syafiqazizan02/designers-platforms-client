@@ -12,7 +12,7 @@
                     <base-input
                       :form="form"
                       field="name"
-                      v-model.trim="form.email"
+                      v-model.trim="form.name"
                       placeholder="Full Name"
                     ></base-input>
                 </div>
