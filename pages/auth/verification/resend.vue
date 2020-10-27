@@ -42,7 +42,8 @@
 
 <script>
 export default {
-    data() {
+  middleware: ['guest'],
+  data() {
     return {
       form: this.$vform({
         email: ''
