@@ -17,15 +17,12 @@
                 </nuxt-link>
               </alert-error>
                 <div class="form-group">
-                    <input
-                      type="text"
-                      name="email"
+                    <base-input
+                      :form="form"
+                      field="email"
                       v-model="form.email"
-                      class="form-control form-control-lg font-14 fw-300"
-                      :class="{ 'is-invalid': form.errors.has('email') }"
                       placeholder="Email"
-                    />
-                    <has-error :form="form" field="email"></has-error>
+                   ></base-input>
                 </div>
                 <div class="form-group">
                     <input
