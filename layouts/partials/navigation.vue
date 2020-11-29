@@ -30,11 +30,11 @@
                               Designs
                             </nuxt-link>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#" title="Designers"
                                 > Designers </a
                             >
-                        </li>
+                        </li> -->
                     </ul>
                     <!-- <div class="header-search">
                         <form action="" method="">
