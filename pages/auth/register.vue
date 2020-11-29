@@ -53,13 +53,7 @@
                     ></base-input>
                 </div>
                 <div class="text-right">
-                    <base-input
-                      :form="form"
-                      inputType="password"
-                      field="password_confirmation"
-                      v-model.trim="form.password_confirmation"
-                      placeholder="Confirm Password"
-                    ></base-input>
+                   <base-button :loading="form.busy">Register</base-button>
                 </div>
                 <p class="font-14 fw-400 text-center mt-4">
                     Already have an account?
