@@ -39,7 +39,8 @@ const routes = [
         component: page('user/settings/designs.vue')
       }	      
     ]
-  }
+  },
+  { path: '/designs', name: 'designs.search', component: page('designs/search.vue')}
 ];
 
 export function createRouter() {

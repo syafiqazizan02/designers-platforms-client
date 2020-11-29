@@ -23,7 +23,12 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav font-14 fw-300">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" title="Shots">Designs</a>
+                             <nuxt-link 
+                                :to="{ name: 'designs.search' }" 
+                                class="nav-link"
+                            >
+                              Designs
+                            </nuxt-link>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" title="Designers"
@@ -31,7 +36,7 @@
                             >
                         </li>
                     </ul>
-                    <div class="header-search">
+                    <!-- <div class="header-search">
                         <form action="" method="">
                             <div class="form-group">
                                 <input
@@ -46,7 +51,7 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                     <div
                         class="upload-shot white-path font-14 fw-500 text-uppercase mr-auto"
                     >
@@ -83,11 +88,8 @@
                               aria-haspopup="true"
                               aria-expanded="false"
                           >
-                              <!-- <img
-                                  class="user-thumb"
-                                  src="assets/images/profile.png"
-                              /> -->
-                              <div class="usr-info">
+                            <img class="user-thumb" :src="$auth.user.photo_url" />
+                            <div class="usr-info">
                                   <span class="user-name font-14 fw-500"
                                       >{{ $auth.user.name }}</span
                                   >
@@ -97,7 +99,7 @@
                                   <span class="down-chevron">
                                       <i class="fa fa-angle-down"></i>
                                   </span>
-                              </div>
+                            </div>
                           </a>
                           <div
                               class="dropdown-menu user-dropdown font-14 fw-500"
@@ -108,18 +110,6 @@
                                       >Your Account</span
                                   >
                               </div>
-                              <!-- <a
-                                  class="dropdown-item mt-28"
-                                  href="#"
-                                  title="Profile"
-                              >
-                                  <i class="fa fa-user"></i>
-                                  Profile
-                              </a>
-                              <a class="dropdown-item" href="#" title="Setting">
-                                  <i class="fa fa-cogs"></i>
-                                  Setting
-                              </a> -->
                               <nuxt-link to="/settings/dashboard" class="dropdown-item mt-28">
                                 <i class="fas fa-tachometer-alt"></i>
                                 Dashboard
