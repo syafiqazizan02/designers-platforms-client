@@ -13,13 +13,13 @@
                 </div>
               </div>
               <!-- End Single Image -->
-              <!-- Design Detail Text -->
+              <!-- Design Descriptions -->
               <div class="desing-text font-16 fw-400 pb-3 pt-2">
                 <p>
                   {{ design.description }}
                 </p>
               </div>
-              <!-- End Design Detail Text -->
+              <!-- End Design Descriptions -->
               <!-- Design Comments -->
               <div class="design-comments mt-3">
                 <h1 class="font-16 fw-300 mb-4">
@@ -47,19 +47,19 @@
 
                   <div class="mt-2 text-right">
                     <base-button :loading="form.busy" size="sm">
-                      Post comment
+                      Post Comment
                     </base-button>
                   </div>
                 </form>
               </template>
-
               <!--/ END COMMENTS-->
             </div>
+            <!--/ END LEFT-->
 
             <!-- RIGHT -->
             <div class="col-md-4">
               <div class="post-detail-sidebar">
-                <!-- Designer info -->
+                <!-- Designer Info -->
                 <div class="modal-user-meta white-bg-color">
                   <a class="float-left" href="#" title="Neba">
                     <img :src="design.user.photo_url" alt="Neba" />
@@ -78,18 +78,18 @@
                     </p>
                   </div>
                 </div>
-                <!-- End Designer info -->
+                <!-- End Designer Info -->
                 <!-- Designer Design Info -->
                 <ul class="details-side-meta font-14 fw-400">
                   <DesignLike :design="design"></DesignLike>
-
-                  <li class="d-table w-100">
+                  <!-- <li class="d-table w-100">
                     <div class="stats-txt d-table-cell w-100">
                       <a href="#"> More from {{ design.user.name }} </a>
                     </div>
-                  </li>
+                  </li> -->
                 </ul>
                 <!-- End Designer Design Info -->
+
                 <!-- Designer More Designs -->
                 <!-- <div class="more-designs-outer pb-3">
                   <ul class="more-designs row">
@@ -112,8 +112,9 @@
                       </a>
                     </li>
                   </ul>
-                </div> -->
+                </div>  -->
                 <!-- End Designer More Designs -->
+
                 <!-- Designs Tags -->
                 <div class="designs-tag-outer mt-3">
                   <h2 class="font-16 fw-500 mb-2">
