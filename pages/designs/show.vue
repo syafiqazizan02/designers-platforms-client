@@ -149,6 +149,7 @@ import DesignComment from '@/components/DesignComment';
 import DesignLike from '@/components/DesignLike';
 
 export default {
+  middleware: ['auth'],
   components: {
     DesignComment,
     DesignLike

@@ -1,6 +1,6 @@
 <template>
   <div>
-     <h1></h1>
+     <!-- <h1 class="text-center">A simple portal gnerated by laravel and nuxt.js technology</h1> -->
   </div>
 </template>
 
@@ -9,7 +9,3 @@ export default {
 
 }
 </script>
-
-<style>
-
-</style>
