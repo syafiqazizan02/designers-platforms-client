@@ -1,6 +1,8 @@
 require('dotenv').config()
 
 export default {
+   // mode: 'universal',
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'DesignersPlatforms',
@@ -76,13 +78,12 @@ export default {
   axios: {
     // baseURL: 'http://designers-platforms.com/api',
     baseUrl: process.env.API_URL
-
   },
 
   // Enable CORS errors (https://accidental.dev/avoid-api-communication-headaches-by-using-a-proxy/)
   devServer: {
     // proxy: 'http://designers-platforms.com/api',
-    proxy: process.env.API_URL
+    proxy: process.env.API_URL 
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

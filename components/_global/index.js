@@ -17,5 +17,6 @@ requireComponent.keys().forEach(fileName => {
 
   const componentName = upperFirst(camelCase(fn));
 
-  Vue.component(componentName, componentConfig.default || componentConfig); // register components by default (by webpack)
+  // register components by default (by webpack)
+  Vue.component(componentName, componentConfig.default || componentConfig); 
 });

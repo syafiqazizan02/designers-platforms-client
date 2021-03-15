@@ -25,7 +25,7 @@
 export default {
   middleware: ['guest'],
   async asyncData({ params, query, app }) {  // params-(:id), query-(json data-object), app-(axios call)
-    const q = await Object.keys(query) // return the body with data like looping(keys)
+    const q = await Object.keys(query) // return query to data like looping(keys)
       .map(k => `${k}=${query[k]}`)
       .join('&');
     try {  // sync to api (server)

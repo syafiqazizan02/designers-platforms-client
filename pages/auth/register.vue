@@ -82,7 +82,6 @@ export default {
   },
   methods: {
     submit() {
-      // alert("Submiting..");
       this.form
         .post(`/register`)
         .then(res => {
