@@ -11,11 +11,6 @@ const routes = [
     component: page('index.vue') 
   },
   { 
-    path: '/', 
-    name: 'about', 
-    component: page('about.vue') 
-  },
-  { 
     path: '/login', 
     name: 'login', 
     component: page('auth/login.vue') 
@@ -59,15 +54,15 @@ const routes = [
     path: '/settings',
     component: page('user/settings/index.vue'),
     children: [
-      {
-        path: '',
-        redirect: { name: 'settings.dashboard' }
-      },
-      {
-        path: 'dashboard',
-        name: 'settings.dashboard',
-        component: page('user/settings/dashboard.vue')
-      },
+      // {
+      //   path: '',
+      //   redirect: { name: 'settings.dashboard' }
+      // },
+      // {
+      //   path: 'dashboard',
+      //   name: 'settings.dashboard',
+      //   component: page('user/settings/dashboard.vue')
+      // },
       {
         path: 'profile',
         name: 'settings.profile',

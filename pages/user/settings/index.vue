@@ -34,10 +34,10 @@ export default {
   data() {
     return {
       links: [
-        {
-          title: 'Dashboard',
-          route: 'dashboard'
-        },
+        // {
+        //   title: 'Dashboard',
+        //   route: 'dashboard'
+        // },
         {
           title: 'Update Profile',
           route: 'profile'

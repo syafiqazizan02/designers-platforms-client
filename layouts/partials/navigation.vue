@@ -110,7 +110,11 @@
                                       >Your Account</span
                                   >
                               </div>
-                              <nuxt-link to="/settings/dashboard" class="dropdown-item mt-28">
+                              <!-- <nuxt-link to="/settings/dashboard" class="dropdown-item mt-28">
+                                <i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                              </nuxt-link> -->
+                              <nuxt-link to="/settings/profile" class="dropdown-item mt-28">
                                 <i class="fas fa-tachometer-alt"></i>
                                 Dashboard
                               </nuxt-link>
